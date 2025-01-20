@@ -73,6 +73,7 @@ font-family: Quicksand;
     font-family: Quicksand;
     font-size: 1.25rem;
     font-weight: 600;
+    cursor: pointer;
 }
 
 /* media query for navbar  */
@@ -92,6 +93,7 @@ font-family: Quicksand;
     }
 }
 marquee{
+    color: white;
     font-size: 2rem;
     margin: 20px 0;
     padding: 10px 0;
@@ -137,6 +139,7 @@ marquee{
     border: none;
     border-radius: 12px;
     background: rgb(17, 17, 17);
+    cursor: pointer;
 }
 .banner-img img{
     width: 100%;
@@ -200,8 +203,10 @@ marquee{
     font-family: Raleway;
     font-size: 1rem;
     font-weight: 500;
+    margin-bottom: 10px;
 }
 .read-more{
+    cursor: pointer;
     margin: 38px 0 63px 0;
     font-family: Quicksand;
     font-size: 1rem;
@@ -242,6 +247,7 @@ marquee{
     font-weight: 900;
     border-radius: 30px;
     background: rgb(254, 163, 1);
+    cursor: pointer;
 }
 /* media query for Curriculum  */
 @media screen and (max-width:576px) {
@@ -306,7 +312,7 @@ marquee{
     background: rgb(60, 216, 232);
 }
 .card-content h3{
-    margin: 51px 0 36px 0;
+    margin: 30px 0 28px 0;
     color: rgb(0, 0, 0);
     font-family: Quicksand;
     font-size: 1.9rem;
@@ -344,11 +350,11 @@ marquee{
     background: rgb(93, 88, 240);
 }
 .view-btn{
-    margin-top: 50px;
     display: flex;
     justify-content: center;
 }
 .view{
+    margin: 50px 0px;
     padding: 10px 60px;
     color: rgb(255, 255, 255);
     font-family: Quicksand;
@@ -356,6 +362,7 @@ marquee{
     border: none;
     border-radius: 12px;
     background: rgb(17, 17, 17);
+    cursor: pointer;
 }
 /* media query for Story section  */
 @media screen and (max-width:576px) {
@@ -371,9 +378,10 @@ marquee{
         left: 20px;
         font-size: 0.7rem;
         padding: 5px 11px;
+        cursor: pointer;
     }
     .story-card{
-        max-height: 200px;
+        max-height: 220px;
         padding-bottom: 20px;
     }
     .card-content{
@@ -388,5 +396,81 @@ marquee{
     .view{
         padding: 3px 30px;
         font-size: 1.1rem;
+    }
+}
+
+/* Footer section starts here */
+footer{
+    background: rgb(1, 172, 253);
+    padding: 10px;
+}
+.footer-container{
+    margin: 100px 0 140px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+}
+.edu-header{
+    display: flex;
+    gap: 20px   ;
+    align-items: center ;
+}
+.kids-edu{
+    max-width: 400px;
+}
+.edu-header h3{
+    color: rgb(255, 255, 255);
+    font-family: Quicksand;
+    font-size: 2.7rem;
+    font-weight: 700;
+}
+.edu-header img{
+    border-radius: 16px;
+    background-color: white;
+}
+.kids-edu p{
+    width: 340px;
+    margin: 36px 0;
+    color: rgb(255, 255, 255);
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: 400;
+}   
+.footer-container .about{
+    margin-left: 100px;
+}
+.about h4{
+    color: rgb(255, 255, 255);
+    font-family: Quicksand;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 32px;
+}
+.about ul li{
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+    list-style: none;
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: 500;
+}
+.social h3{
+    margin-bottom: 32px;
+    color: rgb(255, 255, 255);
+    font-family: Quicksand;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+/* media query for footer section  */
+@media screen and (max-width:576px) {
+    .footer-container{
+        flex-direction: column;
+    }
+    .social{
+        margin-top: 20px;
+    }
+    .about{
+        margin-left: 0px;
     }
 }
