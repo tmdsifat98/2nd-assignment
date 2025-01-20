@@ -235,11 +235,150 @@ font-family: Quicksand;
     border-radius: 30px;
     background: rgb(254, 163, 1);
 }
+/* media query for Curriculum  */
 @media screen and (max-width:576px) {
     .curriculum-container{
         flex-direction: column;
     }
     .arrows{
         display: none;
+    }
+}
+/*Stories section starts here */
+.Stories{
+    background: url(../assets/bg.png),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.Stories h2{
+    margin: 60px 0;
+    color: rgb(0, 0, 0);
+    font-family: Quicksand;
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+}
+.story-card-container{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.story-card{
+    max-width: 540px;
+    border-radius: 16px;
+    background: rgb(255, 255, 255);
+}
+.story-card img{
+    width: 100%;
+    border-radius: 16px 16px 0px 0px;
+}
+.story-card-left{
+    height: 630px;
+}
+.story-card-right{
+    height:625px;
+}
+.card-content{
+    padding: 0 38px;
+}
+.story-btn{
+    position: relative;
+    top: -40px;
+    left: 30px;
+    padding: 20px 30px;
+    color: rgb(255, 255, 255);
+    font-family: Raleway;
+    font-size: 1.3rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 47.93px;
+    background: rgb(60, 216, 232);
+}
+.card-content h3{
+    margin: 51px 0 36px 0;
+    color: rgb(0, 0, 0);
+    font-family: Quicksand;
+    font-size: 1.9rem;
+    font-weight: 700;
+}
+.card-content p{
+    margin-bottom: 34px;
+    color: rgb(102, 102, 102);
+    font-family: Raleway;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.story-card-right{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+.card-content h4{
+    text-align: left;
+    margin: 5px 0 20px 0px ;
+    color: rgb(0, 0, 0);
+    font-family: Quicksand;
+    font-size: 1rem;
+    font-weight: 700;
+}
+.story-btn-2, .story-btn-4, .story-btn-5{
+    top: -26px;
+    padding: 10px 20px;
+    background: rgb(149, 178, 38);
+}
+.story-btn-3{
+    top: -26px;
+    padding: 10px 20px;
+    background: rgb(93, 88, 240);
+}
+.view-btn{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.view{
+    padding: 10px 60px;
+    color: rgb(255, 255, 255);
+    font-family: Quicksand;
+    font-size: 1.25rem;
+    border: none;
+    border-radius: 12px;
+    background: rgb(17, 17, 17);
+}
+/* media query for Story section  */
+@media screen and (max-width:576px) {
+    .story-card-left{
+        display: none;
+    }
+    .story-card-right{
+        height: fit-content;
+    }
+    .story-btn{
+        position: relative;
+        top: -15px;
+        left: 20px;
+        font-size: 0.7rem;
+        padding: 5px 11px;
+    }
+    .story-card{
+        max-height: 200px;
+        padding-bottom: 20px;
+    }
+    .card-content{
+        padding: 0 10px;
+    }
+    .card-content h4{
+        font-size: 0.9rem;
+        padding: 0px;
+        text-align: left;
+        margin:0px ;
+    }
+    .view{
+        padding: 3px 30px;
+        font-size: 1.1rem;
     }
 }
