@@ -93,3 +93,59 @@ font-family: Quicksand;
 }
 
 /* banner section starts here */
+.banner-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 3rem; */
+}
+.banner-content{
+    width: 50%;
+}
+.banner-title{
+    font-family: Quicksand;
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+.empowering{
+    color: rgb(254, 163, 1);
+}
+.towards{
+    color: rgb(1, 172, 253);
+}
+.banner-description{
+    margin: 24px 0;
+    color: rgb(17, 17, 17);
+    font-family: Quicksand;
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+.banner-btn{
+    padding: 10px 55px;
+    color: rgb(255, 255, 255);
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: 700;
+    border: none;
+    border-radius: 12px;
+    background: rgb(17, 17, 17);
+}
+.banner-img img{
+    width: 100%;
+}
+/* Media query for banner section */
+@media screen and (max-width:576px) {
+    .banner-container{
+        flex-direction: column-reverse;
+        justify-content: center;
+        text-align: center;
+        gap: 20px;
+    }
+    .banner-content{
+        width: 100%;
+    }
+
+    .banner-img img{
+        width: 90%;
+    }
+}
