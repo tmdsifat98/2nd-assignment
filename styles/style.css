@@ -473,4 +473,7 @@ footer{
     .about{
         margin-left: 0px;
     }
+    .footer-container .about{
+        margin-left: 0px;
+    }
 }
