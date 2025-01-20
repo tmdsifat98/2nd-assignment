@@ -91,6 +91,14 @@ font-family: Quicksand;
         width: 90%;
     }
 }
+marquee{
+    font-size: 2rem;
+    margin: 20px 0;
+    padding: 10px 0;
+    font-family: raleway;
+    font-weight: 600;
+    background-color: rgba(254, 161, 1, 0.897) ;
+}
 
 /* banner section starts here */
 .banner-container{
