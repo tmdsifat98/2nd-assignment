@@ -149,3 +149,97 @@ font-family: Quicksand;
         width: 90%;
     }
 }
+
+/* Standard curriculum starts here */
+.curriculum{
+    background: url(../assets/bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.curriculum h3{
+    margin: 40px 0 70px 0;
+    color: rgb(0, 0, 0);
+    font-family: Quicksand;
+    font-size: 3.9rem;
+    font-weight: 700;
+    text-align: center;
+}
+.curriculum-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 28px;
+}
+.curriculum-card{
+    padding: 65px 40px 0px;
+    max-width: 367px;
+    text-align: center;
+    border: 0.94px solid rgb(222, 245, 255);
+    border-radius: 18.86px;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+
+}
+.curriculum-card h4{
+    margin: 44px 0 33px 0;
+    color: rgb(32, 32, 32);
+    font-family: Quicksand;
+    font-size: 1.6rem   ;
+    font-weight: 700;
+}
+.curriculum-card-subtitle{
+    color: rgb(128, 128, 128);
+    font-family: Raleway;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.read-more{
+    margin: 38px 0 63px 0;
+    font-family: Quicksand;
+    font-size: 1rem;
+    font-weight: 700;
+}
+.curriculum-card-1{
+    background: linear-gradient(180.00deg, rgb(222, 245, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+.read-more-1{
+    color: rgb(100, 200, 255);
+}
+.curriculum-card-2{
+    background: linear-gradient(180.00deg, rgb(255, 244, 220),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+.read-more-2{
+    color: rgb(240, 170, 0);
+}
+.curriculum-card-3{
+    background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+.read-more-3{
+    color: rgb(135, 0, 255);
+}
+.arrows{
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.arrows i{
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-size: 2.5rem;
+    font-weight: 900;
+    border-radius: 30px;
+    background: rgb(254, 163, 1);
+}
+@media screen and (max-width:576px) {
+    .curriculum-container{
+        flex-direction: column;
+    }
+    .arrows{
+        display: none;
+    }
+}
