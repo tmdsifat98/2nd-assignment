@@ -92,7 +92,10 @@ font-family: Quicksand;
         width: 90%;
     }
 }
+
+/* styles for marquee tag */
 marquee{
+    text-shadow: 5px 5px 8px rgb(14, 1, 131);
     color: white;
     font-size: 2rem;
     margin: 20px 0;
@@ -155,6 +158,9 @@ marquee{
     .banner-content{
         width: 100%;
     }
+    .banner-description{
+        padding: 0 10px;
+    }
 
     .banner-img img{
         width: 90%;
@@ -165,11 +171,11 @@ marquee{
 .curriculum{
     background: url(../assets/bg.png);
     background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-size: contain;
+    background-repeat: repeat;
 }
 .curriculum h3{
-    margin: 40px 0 70px 0;
+    margin: 60px 0 70px 0;
     color: rgb(0, 0, 0);
     font-family: Quicksand;
     font-size: 3.9rem;
@@ -183,15 +189,20 @@ marquee{
     gap: 28px;
 }
 .curriculum-card{
-    padding: 65px 40px 0px;
-    max-width: 367px;
+    height: 480px;
+    width: 367px;
+    padding: 3rem 1rem 0px;
     text-align: center;
     border: 0.94px solid rgb(222, 245, 255);
     border-radius: 18.86px;
     box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
-
+}
+.curriculum-card img{
+    width: 40%;
+    margin: 10px;
 }
 .curriculum-card h4{
+    max-height: 66px;
     margin: 44px 0 33px 0;
     color: rgb(32, 32, 32);
     font-family: Quicksand;
@@ -199,6 +210,8 @@ marquee{
     font-weight: 700;
 }
 .curriculum-card-subtitle{
+    height: 75px;
+    overflow: hidden;
     color: rgb(128, 128, 128);
     font-family: Raleway;
     font-size: 1rem;
@@ -251,19 +264,24 @@ marquee{
 }
 /* media query for Curriculum  */
 @media screen and (max-width:576px) {
+
     .curriculum-container{
         flex-direction: column;
     }
     .arrows{
         display: none;
     }
+    .curriculum-card{
+        width: 95vw;
+        height: auto;
+    }
 }
 /*Stories section starts here */
 .Stories{
     background: url(../assets/bg.png),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
     background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-size: contain;
+    background-repeat: repeat;
 }
 .Stories h2{
     margin: 60px 0;
@@ -302,10 +320,10 @@ marquee{
     position: relative;
     top: -40px;
     left: 30px;
-    padding: 20px 30px;
+    padding: 1.2rem 1.8rem;
     color: rgb(255, 255, 255);
     font-family: Raleway;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 500;
     border: none;
     border-radius: 47.93px;
@@ -394,8 +412,9 @@ marquee{
         margin:0px ;
     }
     .view{
-        padding: 3px 30px;
-        font-size: 1.1rem;
+        border-radius: 8px;
+        padding: 5px 30px;
+        font-size: 1.2rem;
     }
 }
 
@@ -447,6 +466,7 @@ footer{
     margin-bottom: 32px;
 }
 .about ul li{
+    cursor: pointer;
     color: rgb(255, 255, 255);
     margin-bottom: 20px;
     list-style: none;
@@ -465,6 +485,7 @@ footer{
 /* media query for footer section  */
 @media screen and (max-width:576px) {
     .footer-container{
+        padding: 0 15px;
         flex-direction: column;
     }
     .social{
