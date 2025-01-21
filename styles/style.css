@@ -198,7 +198,7 @@ marquee{
     box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
 }
 .curriculum-card img{
-    width: 40%;
+    height: 126px;
     margin: 10px;
 }
 .curriculum-card h4{
@@ -211,7 +211,6 @@ marquee{
 }
 .curriculum-card-subtitle{
     height: 75px;
-    overflow: hidden;
     color: rgb(128, 128, 128);
     font-family: Raleway;
     font-size: 1rem;
@@ -272,7 +271,7 @@ marquee{
         display: none;
     }
     .curriculum-card{
-        width: 95vw;
+        width: 91vw;
         height: auto;
     }
 }
